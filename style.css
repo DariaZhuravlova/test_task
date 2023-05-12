@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e2e8ed;
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    position: relative;
+}
+
+.container {
+    background-image: url("img/FullSizeRender.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 100px;
+    width: 350px;
+    height: 550px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title {
+    color: white;
+    margin-top: 110px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 66%;
+    margin: 0 auto;
+}
+
+.input {
+    border: 0;
+    display: block;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    margin: 0 auto;
+}
+
+.input:last-child{
+    border-bottom: 0;
+}
+
+.btn {
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    width: 66%;
+	margin: 15px auto; 
+    padding: 15px; 
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(20, 20, 20, 0.9);
+}
+
+.login {
+	background-color: white;
+    overflow: hidden;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.login_title {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.grey_text {
+    color: grey;
+    margin-right: 5px;
+}
+
+.login_link {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.login_link:hover {
+    color: grey;
+}
+
+/* Extra small: 0px (320px) - 575px */
+ @media (max-width: 575px) {
+    .container {
+        width: 300px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        width: 700px;
+    }
+    .form{
+        width: 50%;
+    }
+    .btn {
+        width: 50%;
+    }
+} 
